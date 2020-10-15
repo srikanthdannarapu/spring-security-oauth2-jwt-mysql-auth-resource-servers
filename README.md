@@ -1,4 +1,4 @@
-# Spring-Boot-2.1-OAuth2-Authorization-Server-and-Resource-Server-JWT-and-MySQL
+# Spring-Boot-OAuth2-Authorization-Server-and-Resource-Server-JWT-and-MySQL
 ### download open ssl desktop app (Win64OpenSSL-1_1_1h.exe) from here and install
 https://slproweb.com/products/Win32OpenSSL.html
 
