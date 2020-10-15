@@ -1,0 +1,1 @@
+# spring-security-oauth2-jwt-mysql-auth-resource-servers
