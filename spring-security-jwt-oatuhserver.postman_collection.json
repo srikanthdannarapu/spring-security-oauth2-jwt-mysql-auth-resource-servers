@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "9aef7507-8cd1-4410-b57b-23cfe26a90a2",
+		"name": "spring-security-jwt-oatuhserver",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/oauth/token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "srikanth-secret",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "srikanth",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "john@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/oauth/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/note",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJtaWtlQGdtYWlsLmNvbSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJuYW1lIjoiTWlrZSIsImlkIjoiMiIsImV4cCI6MTYwMjc2NTMxNSwidXNlck5hbWUiOiJtaWtlQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVklFV19OT1RFIiwiUk9MRV9WSUVXX0FMTF9OT1RFIl0sImp0aSI6IjZlMTMzZDM4LTZkZWYtNDg2Ny05Y2YwLTEyNzY0MTZmNDkyZCIsImNsaWVudF9pZCI6InNyaWthbnRoIn0.AgMISCrHCTwZ-zwU6FqMEmLSr3pG-_yHURHfHc4vGi4QbQv8vEc_KItELjy7b6lZZoHuokgUjNSj-KN5yVLjH34RrfOgzWkqABNFh6r6oJ7q_Yk0asie1pAzSbuImIgSuZ8H7THkUyoCAG9yx_ZKO2cFJqa2dagcZ5xr3_0-7IJom3UB4wuWi7aWHRK8swZKJcNGxNq6hj9BhAmDgvCz-kiVvtOP6B5iPoWlCGK2JMI9jD39mbR-pYqWQuJups1HF_JdxB7iToT6NNoROi3SZtLh_MYHLgQcLIjbjZ952-7ZcLhyfWAlkOu6nkr0cz88b_1MtpmgIA658IY8txUQ5g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/note",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"note"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
