@@ -27,3 +27,4 @@ SELECT * FROM sridb.assign_user_to_role;
 ![assign_user_to_role](images/assign_user_to_role.jpg)
 
 ## postman collection is attached
+* password for john@gmail.com and mike@gmail.com is passord (bcrypted)
