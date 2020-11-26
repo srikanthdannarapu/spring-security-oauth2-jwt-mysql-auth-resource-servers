@@ -21,7 +21,7 @@ SELECT * FROM sridb.user;
 ![User](images/user.jpg)
 
 SELECT * FROM sridb.assign_permission_to_role;
-![assign_permission_to_role](images/assign_permission_to_role.jpg)
+![assign_permission_to_role](images/sridb.assign_permission_to_role.jpg)
 
 SELECT * FROM sridb.assign_user_to_role;
 ![assign_user_to_role](images/assign_user_to_role.jpg)
